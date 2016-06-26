@@ -1,0 +1,9 @@
+---
+applications:
+- name: cf-ex-wordpress
+  memory: 128M
+  path: .
+  buildpack: https://github.com/dmikusa-pivotal/cf-php-build-pack.git
+  host: Huffman-Technology
+  services:
+  - wordpress-db
